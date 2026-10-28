@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>محمد العروسي | مهندس معماري</title>
+<meta name="theme-color" content="#0F172A">
+<style>
+:root{--bg:#0F172A;--ac:#3B82F6;--cy:#06B6D4;--ok:#34D399;--tx:#F8FAFC;--mt:#94A3B8;--ln:rgba(148,163,184,.22);--cd:rgba(15,23,42,.72)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;color-scheme:dark}
+body{background:var(--bg);color:var(--tx);font-family:"Sakkal Majalla","Traditional Arabic","Amiri","Noto Naskh Arabic","FreeSerif","Times New Roman",serif;line-height:1.8;overflow-x:hidden}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block}
+.fallback{position:fixed;inset:0;z-index:0;background:linear-gradient(rgba(148,163,184,.055) 1px,transparent 1px) 0 0/56px 56px,linear-gradient(90deg,rgba(148,163,184,.055) 1px,transparent 1px) 0 0/56px 56px,radial-gradient(55% 55% at var(--x1,22%) var(--y1,40%),rgba(59,130,246,.34),transparent 70%),radial-gradient(50% 50% at var(--x2,85%) var(--y2,15%),rgba(6,182,212,.24),transparent 70%),radial-gradient(60% 50% at var(--x3,70%) var(--y3,95%),rgba(59,130,246,.16),transparent 70%),#0F172A}
+#pb{position:fixed;top:0;inset-inline-start:0;height:3px;width:0;z-index:9;background:linear-gradient(90deg,#3B82F6,#06B6D4,#34D399);box-shadow:0 0 12px rgba(6,182,212,.7)}
+#cg{position:fixed;left:0;top:0;width:380px;height:380px;margin:-190px 0 0 -190px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,.28),rgba(6,182,212,.12) 45%,transparent 70%);pointer-events:none;z-index:1;opacity:0;transition:opacity .4s;mix-blend-mode:screen}
+nav{position:fixed;inset-inline:0;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top,0px)) 5vw 14px;background:linear-gradient(rgba(15,23,42,.94),rgba(15,23,42,0));backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.lg{font-size:1.2rem;font-weight:700;letter-spacing:.03em;color:var(--tx);text-decoration:none}
+.lg small{display:block;font-size:.62rem;letter-spacing:.38em;color:var(--cy);font-weight:700}
+nav ul{display:flex;gap:28px;list-style:none}
+nav a{color:var(--tx);text-decoration:none;font-size:1.02rem;font-weight:700;opacity:.7;transition:.3s}
+nav a:hover{color:var(--cy);opacity:1}
+nav ul a.on{color:var(--cy);opacity:1;border-bottom:2px solid var(--cy)}
+.bt{position:relative;overflow:hidden;display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#3B82F6,#06B6D4);color:#fff;font-weight:700;text-decoration:none;border:0;font-size:1.02rem;transition:box-shadow .3s,transform .25s;box-shadow:0 8px 24px rgba(59,130,246,.4);border-radius:3px}
+.bt:hover{box-shadow:0 14px 34px rgba(6,182,212,.55)}
+.bt.o{background:rgba(15,23,42,.5);color:var(--tx);border:1.5px solid var(--ac);box-shadow:none}
+.bt.o:hover{background:var(--ac);box-shadow:0 10px 28px rgba(59,130,246,.5)}
+.bt .rp{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);animation:rp .6s ease-out forwards;pointer-events:none}
+@keyframes rp{to{transform:scale(1);opacity:0}}
+main{position:relative;z-index:2}
+section{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:110px 7vw 70px}
+.c{width:min(560px,100%);margin-inline-start:0;margin-inline-end:auto}
+.eb{color:var(--cy);letter-spacing:.28em;font-size:.88rem;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.eb::before{content:"";width:38px;height:2px;background:linear-gradient(90deg,var(--ac),var(--cy))}
+h1,h2{font-weight:700;line-height:1.25;color:var(--tx)}
+h1{font-size:clamp(2.7rem,7vw,5.2rem)}
+h2{font-size:clamp(2rem,5vw,3.4rem)}
+h1 em,h2 em{font-style:normal;color:var(--cy)}
+h1 em .w,h2 em .w{background:linear-gradient(100deg,#3B82F6,#06B6D4 65%,#34D399);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+p.l{margin:18px 0 28px;color:var(--mt);font-size:1.15rem}
+.bs{display:flex;flex-wrap:wrap;gap:12px}
+.st{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.st>div{background:var(--cd);border:1px solid var(--ln);border-top:3px solid var(--cy);padding:14px 22px;box-shadow:0 12px 34px rgba(0,0,0,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.st b{display:block;font-size:2.4rem;color:var(--tx);line-height:1.1;direction:ltr;text-align:right}
+.st span{color:var(--mt);font-size:.98rem;font-weight:700}
+.gr{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.cd{border:1px solid var(--ln);background:var(--cd);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:14px 16px;font-size:1.05rem;font-weight:700;color:var(--tx);position:relative;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+.cd::before{content:"";position:absolute;inset-inline-start:0;top:0;width:4px;height:100%;background:linear-gradient(var(--ac),var(--cy));transform:scaleY(.35);transform-origin:top;transition:.4s}
+.cd:hover{border-color:var(--cy);box-shadow:0 14px 34px rgba(6,182,212,.22)}.cd:hover::before{transform:scaleY(1)}
+.pr{margin-top:20px}
+.pr div{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:16px 18px;margin-bottom:10px;background:var(--cd);border:1px solid var(--ln);border-inline-start:4px solid var(--ac);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.pr div:hover{border-inline-start-color:var(--cy);box-shadow:0 12px 30px rgba(6,182,212,.2)}
+.pr b{font-size:1.6rem;color:var(--tx);direction:ltr;letter-spacing:.05em}
+.pr span{color:var(--mt);font-size:1.02rem;text-align:left;font-weight:700}
+.tl{list-style:none;margin-top:14px}
+.tl li{position:relative;padding:7px 24px 7px 0;color:#CBD5E1;font-size:1.06rem}
+.tl li::before{content:"";position:absolute;right:0;top:19px;width:9px;height:9px;background:linear-gradient(135deg,var(--ok),var(--cy));transform:rotate(45deg);box-shadow:0 0 10px rgba(52,211,153,.6)}
+.tl h3{font-size:1.25rem;color:var(--cy);margin:18px 0 2px}
+footer{position:relative;z-index:2;background:#0a1020;color:var(--tx);border-top:3px solid var(--ac);padding:46px 7vw 40px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+footer h4{color:var(--cy);margin-bottom:10px;font-size:1.15rem}
+footer p,footer a{color:var(--mt);text-decoration:none;display:block;font-size:1rem;direction:ltr;text-align:right}
+footer p.a{direction:rtl}
+footer a:hover{color:var(--cy)}
+.cp{grid-column:1/-1;border-top:1px solid var(--ln);padding-top:18px;color:#64748B;font-size:.85rem;letter-spacing:.12em;direction:ltr;text-align:center}
+.sc{position:fixed;bottom:22px;inset-inline-start:50%;transform:translateX(50%);z-index:4;color:var(--mt);font-size:.78rem;font-weight:700;letter-spacing:.3em;text-align:center;transition:opacity .5s}
+.sc i{display:block;margin:6px auto 0;width:2px;height:34px;background:linear-gradient(var(--cy),transparent);animation:dn 1.8s infinite}
+@keyframes dn{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+#dots{position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:6;display:flex;flex-direction:column;gap:14px}
+#dots a{width:11px;height:11px;border:2px solid var(--mt);border-radius:50%;display:block;transition:.35s;opacity:.6}
+#dots a.on{background:var(--cy);border-color:var(--cy);transform:scale(1.5);opacity:1;box-shadow:0 0 0 5px rgba(6,182,212,.25)}
+#dots a:hover{opacity:1;border-color:var(--ac);background:var(--ac)}
+.w{display:inline-block;opacity:0;transform:translateY(.7em) rotateX(-70deg);transform-origin:50% 100%;transition:opacity .8s,transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i)*75ms)}
+.rv.in .w{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s,transform 1s}.rv.in{opacity:1;transform:none}
+.tilt{transition:transform .2s ease-out,box-shadow .3s,border-color .3s;will-change:transform}
+@media (max-width:820px){
+ nav ul,#dots,#cg{display:none}
+ section{align-items:flex-end;padding:100px 6vw 60px}
+ .c{background:linear-gradient(rgba(15,23,42,0),rgba(15,23,42,.93) 24%);padding:50px 0 0;margin:0 auto}
+ .st>div{padding:10px 16px}.st b{font-size:2rem}
+ footer{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.w{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="fallback" id="fb"></div>
+<div id="pb"></div>
+<div id="cg"></div>
+<canvas id="gl"></canvas>
+<nav>
+  <a class="lg" href="#h">محمد العروسي<small>ARCHITECT</small></a>
+  <ul><li><a href="#a">الخبرة</a></li><li><a href="#s">المهارات</a></li><li><a href="#p">البرامج</a></li><li><a href="#e">المسيرة</a></li></ul>
+  <a class="bt" href="#k">تواصل معي</a>
+</nav>
+<div id="dots"><a href="#h"></a><a href="#a"></a><a href="#s"></a><a href="#p"></a><a href="#e"></a><a href="#k"></a></div>
+<div class="sc" id="sc">SCROLL<i></i></div>
+<main>
+<section id="h"><div class="c rv">
+  <div class="eb">مهندس معماري | ARCHITECT</div>
+  <h1>دقة. تصميم.<br><em>إتقان.</em></h1>
+  <p class="l">أحوّل الفكرة التصميمية إلى مخططات تنفيذية ونماذج ثلاثية الأبعاد ومخرجات بصرية متكاملة، من أول خط على الورق حتى الموقع.</p>
+  <div class="bs"><a class="bt" href="#k">ابدأ مشروعك</a><a class="bt o" href="#a">استكشف أعمالي</a></div>
+</div></section>
+
+<section id="a"><div class="c rv">
+  <div class="eb">الخبرة المعمارية</div>
+  <h2>خبرة أكاديمية <em>وتطبيقية</em></h2>
+  <p class="l">مهندس معماري حاصل على بكالوريوس في الهندسة المعمارية من جامعة دار السلام الدولية للعلوم والتكنولوجيا. يمتلك معرفة في التصميم المعماري، وإعداد المخططات والرسومات الهندسية، والنمذجة ثلاثية الأبعاد، والإظهار المعماري.</p>
+  <div class="st"><div><b data-n="71.56" data-d="2" data-s="%">71.56%</b><span>المعدل التراكمي</span></div><div><b data-n="84" data-d="0" data-s="%">84%</b><span>تقدير مشروع التخرج</span></div></div>
+</div></section>
+
+<section id="s"><div class="c rv">
+  <div class="eb">المهارات</div>
+  <h2>خدمات <em>هندسية</em> متكاملة</h2>
+  <div class="gr">
+    <div class="cd">إعداد المخططات التنفيذية</div><div class="cd">التصميم المعماري وتطوير التصاميم</div>
+    <div class="cd">الإخراج البصري والواقعي</div><div class="cd">إعداد وحساب الكميات</div>
+    <div class="cd">المسح ورفع الأراضي</div><div class="cd">المخططات الكهربائية</div>
+    <div class="cd">الصرف الصحي وتغذية المياه</div><div class="cd">تنسيق المواقع واللاندسكيب</div>
+    <div class="cd">التصميم الداخلي والديكور</div><div class="cd">تصميم الواجهات</div>
+  </div>
+</div></section>
+
+<section id="p"><div class="c rv">
+  <div class="eb">الحرفة</div>
+  <h2>أدوات <em>الصنعة</em></h2>
+  <div class="pr">
+    <div><b>AutoCAD</b><span>الرسم والتصميم الهندسي</span></div>
+    <div><b>Revit</b><span>النمذجة والتصميم المعماري</span></div>
+    <div><b>Lumion</b><span>الإظهار المعماري والتصميم ثلاثي الأبعاد</span></div>
+  </div>
+</div></section>
+
+<section id="e"><div class="c rv">
+  <div class="eb">المسيرة</div>
+  <h2>مؤهلات <em>وإنجازات</em></h2>
+  <ul class="tl">
+    <h3>المؤهل العلمي</h3>
+    <li>بكالوريوس الهندسة المعمارية، جامعة دار السلام الدولية للعلوم والتكنولوجيا.</li>
+    <li>مشروع التخرج: قصر المؤتمرات الدولي، بتقدير جيد جدًا (84%).</li>
+    <h3>الخبرات</h3>
+    <li>تنفيذ مشاريع في عامي 2024 و2025، وعدد من المخططات المعمارية والتنفيذية.</li>
+    <li>الإشراف على بعض أعمال البناء.</li>
+    <h3>الإنجازات</h3>
+    <li>المركز الثاني على مستوى الجامعات اليمنية في مسابقة علمية أقامتها وزارة التربية والتعليم والبحث العلمي.</li>
+    <li>شهادات في برامج الهندسة والتدريب والاستشارات الهندسية.</li>
+  </ul>
+</div></section>
+
+<section id="k"><div class="c rv">
+  <div class="eb">الخطوة التالية</div>
+  <h2>مشروعك القادم<br><em>يبدأ هنا.</em></h2>
+  <p class="l">أسعى للعمل في مكتب هندسي، وتوظيف مهاراتي وخبراتي للمساهمة في تطوير العمل الهندسي وتحقيق نتائج مهنية متميزة.</p>
+  <div class="bs"><a class="bt" href="tel:+966509561704">اتصل الآن</a><a class="bt o" href="mailto:mohammedalmtrea@gmail.com">أرسل بريدًا</a></div>
+</div></section>
+</main>
+<footer>
+  <div><h4>محمد عبدالعزيز محمد يحيى العروسي</h4><p class="a">مهندس معماري، خريج جامعة دار السلام الدولية للعلوم والتكنولوجيا.</p></div>
+  <div><h4>التواصل</h4><a href="tel:+966509561704">+966 509561704</a><a href="mailto:mohammedalmtrea@gmail.com">mohammedalmtrea@gmail.com</a></div>
+  <div><h4>الروابط</h4><a href="https://is.gd/eng_mohammed_alorousi">is.gd/eng_mohammed_alorousi</a></div>
+  <div class="cp">ARCHITECT · MOHAMMED ALOROUSI · 2026</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");}})},{threshold:.15});
+  document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+  addEventListener("scroll",function(){document.getElementById("sc").style.opacity=scrollY>80?0:1},{passive:true});
+  /* كلمات متتابعة في العناوين */
+  var wi=0;
+  function wrap(n){Array.prototype.slice.call(n.childNodes).forEach(function(c){
+    if(c.nodeType===3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(t){
+      if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(" "));return}
+      var sp=document.createElement("span");sp.className="w";sp.style.setProperty("--i",wi++);sp.textContent=t;f.appendChild(sp)});c.parentNode.replaceChild(f,c)}
+    else if(c.nodeName!=="BR")wrap(c)})}
+  document.querySelectorAll("h1,h2").forEach(function(h){wi=0;wrap(h)});
+  var fine=matchMedia("(pointer:fine)").matches;
+  /* توهج يتبع المؤشر + مغناطيس الأزرار + ميلان البطاقات */
+  var cg=document.getElementById("cg");
+  if(fine&&!rm){
+    addEventListener("pointermove",function(e){cg.style.opacity=1;cg.style.transform="translate("+e.clientX+"px,"+e.clientY+"px)"},{passive:true});
+    document.querySelectorAll(".bt").forEach(function(b){
+      b.addEventListener("pointermove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.18)+"px,"+((e.clientY-r.top-r.height/2)*.3-3)+"px)"});
+      b.addEventListener("pointerleave",function(){b.style.transform=""});
+    });
+    document.querySelectorAll(".cd,.pr div,.st>div").forEach(function(c){
+      c.classList.add("tilt");
+      c.addEventListener("pointermove",function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform="perspective(600px) rotateX("+(-y*10)+"deg) rotateY("+(x*12)+"deg) translateY(-4px)"});
+      c.addEventListener("pointerleave",function(){c.style.transform=""});
+    });
+  }
+  document.querySelectorAll(".bt").forEach(function(b){b.addEventListener("click",function(e){var r=b.getBoundingClientRect(),d=Math.max(r.width,r.height)*2,sp=document.createElement("span");sp.className="rp";sp.style.cssText="width:"+d+"px;height:"+d+"px;left:"+(e.clientX-r.left-d/2)+"px;top:"+(e.clientY-r.top-d/2)+"px";b.appendChild(sp);setTimeout(function(){sp.remove()},650)})});
+  /* تمييز القسم الحالي + نقاط التنقل + حركة الخلفية */
+  var secs=["h","a","s","p","e","k"],dots=document.querySelectorAll("#dots a"),links=document.querySelectorAll("nav ul a"),fb=document.getElementById("fb");
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var i=secs.indexOf(e.target.id);
+    dots.forEach(function(d,k){d.classList.toggle("on",k===i)});links.forEach(function(l){l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id)})})},{threshold:.55});
+  secs.forEach(function(id){so.observe(document.getElementById(id))});
+  addEventListener("scroll",function(){var m=document.documentElement.scrollHeight-innerHeight,p=m>0?scrollY/m:0;
+    fb.style.setProperty("--x1",(22+p*50)+"%");fb.style.setProperty("--y1",(40-p*25)+"%");fb.style.setProperty("--x2",(85-p*55)+"%");fb.style.setProperty("--y2",(15+p*60)+"%");fb.style.setProperty("--x3",(70-p*40)+"%");fb.style.setProperty("--y3",(95-p*40)+"%")},{passive:true});
+
+  var pb=document.getElementById("pb");
+  addEventListener("scroll",function(){var m=document.documentElement.scrollHeight-innerHeight;pb.style.width=(m>0?scrollY/m*100:0)+"%"},{passive:true});
+  var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,n=+el.dataset.n,d=+el.dataset.d,sf=el.dataset.s,t0=null;co.unobserve(el);
+    if(rm){return}
+    (function st(t){if(!t0)t0=t;var p=Math.min((t-t0)/1600,1);el.textContent=(n*(1-Math.pow(1-p,3))).toFixed(d)+sf;if(p<1)requestAnimationFrame(st)})(performance.now());
+  })},{threshold:.6});
+  document.querySelectorAll(".st b[data-n]").forEach(function(el){co.observe(el)});
+  if(!window.THREE){return}
+  var cv=document.getElementById("gl"),R;
+  try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true})}catch(e){return}
+  R.setPixelRatio(Math.min(devicePixelRatio,2));
+  var S=new THREE.Scene();S.fog=new THREE.FogExp2(0x0F172A,.03);
+  var C=new THREE.PerspectiveCamera(42,1,.1,100);
+  var GOLD=0x22d3ee;
+  S.add(new THREE.AmbientLight(0xffffff,.6));
+  var dl=new THREE.DirectionalLight(0xffffff,1.0);dl.position.set(4,6,5);S.add(dl);
+  var pl=new THREE.PointLight(0x3B82F6,2.4,24);pl.position.set(-3,2,3);S.add(pl);
+
+  /* برج جدة: منشور ثلاثي مدبب مع أرضيات */
+  var T=new THREE.Group(),H=7,R0=1.1,R1=.1;
+  var body=new THREE.Mesh(new THREE.CylinderGeometry(R1,R0,H,3,1),new THREE.MeshStandardMaterial({color:0x1d4ed8,metalness:.5,roughness:.25,flatShading:true,emissive:0x0b2a7a,emissiveIntensity:.55}));
+  T.add(body);
+  T.add(new THREE.LineSegments(new THREE.EdgesGeometry(body.geometry),new THREE.LineBasicMaterial({color:GOLD})));
+  var fl=[];for(var k=1;k<44;k++){
+    var f=k/44,r=R0+(R1-R0)*f,y=-H/2+H*f,pts=[];
+    for(var a=0;a<3;a++){var an=Math.PI/2+a*Math.PI*2/3;pts.push(new THREE.Vector3(Math.cos(an)*r,y,-Math.sin(an)*r))}
+    var L=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:GOLD,transparent:true,opacity:.35}));
+    L.userData.k=k;fl.push(L);T.add(L);
+  }
+  var sp=new THREE.Mesh(new THREE.CylinderGeometry(.005,.04,1.4,6),new THREE.MeshStandardMaterial({color:GOLD,metalness:.6,roughness:.25}));sp.position.y=H/2+.6;T.add(sp);
+  S.add(T);
+
+  /* مدينة حول البرج */
+  var city=new THREE.Group();
+  for(var i=0;i<22;i++){
+    var w=.3+Math.random()*.5,h=.5+Math.random()*2.2,an2=i/22*Math.PI*2,rad=2.4+Math.random()*3.2;
+    var bx=new THREE.Mesh(new THREE.BoxGeometry(w,h,w),new THREE.MeshStandardMaterial({color:0x16233f,metalness:.4,roughness:.5}));
+    bx.position.set(Math.cos(an2)*rad,-H/2+h/2,Math.sin(an2)*rad);
+    bx.add(new THREE.LineSegments(new THREE.EdgesGeometry(bx.geometry),new THREE.LineBasicMaterial({color:GOLD,transparent:true,opacity:.55})));
+    city.add(bx);
+  }
+  var grid=new THREE.GridHelper(24,48,GOLD,0x1e3a5f);grid.position.y=-H/2;grid.material.transparent=true;grid.material.opacity=.6;city.add(grid);
+  T.add(city);
+
+  /* حلقة ذهبية مضيئة */
+  var ring=new THREE.Mesh(new THREE.TorusGeometry(3.3,.035,16,160),new THREE.MeshBasicMaterial({color:0x3B82F6,transparent:true,opacity:0}));
+  S.add(ring);
+  var ring2=new THREE.Mesh(new THREE.TorusGeometry(2.7,.02,12,140),new THREE.MeshBasicMaterial({color:0x06B6D4,transparent:true,opacity:0}));
+  S.add(ring2);
+
+  /* فرجار هندسي */
+  var Cp=new THREE.Group(),gm=new THREE.MeshStandardMaterial({color:0x3B82F6,metalness:.55,roughness:.25});
+  function leg(x,rz){var g=new THREE.Group(),m=new THREE.Mesh(new THREE.CylinderGeometry(.06,.035,3.6,12),gm);m.position.y=-1.8;g.add(m);
+    var tip=new THREE.Mesh(new THREE.ConeGeometry(.035,.4,12),new THREE.MeshStandardMaterial({color:0xF8FAFC,metalness:.5,roughness:.2}));tip.position.y=-3.8;tip.rotation.x=Math.PI;g.add(tip);g.rotation.z=rz;return g}
+  Cp.add(leg(0,.4),leg(0,-.4));
+  var hd=new THREE.Mesh(new THREE.SphereGeometry(.2,24,16),gm);Cp.add(hd);
+  var kn=new THREE.Mesh(new THREE.CylinderGeometry(.07,.07,.9,12),gm);kn.position.y=.55;Cp.add(kn);
+  var arc=new THREE.Mesh(new THREE.TorusGeometry(1.4,.03,8,80,Math.PI*.8),new THREE.MeshBasicMaterial({color:0x06B6D4,transparent:true,opacity:0}));
+  arc.position.y=-3.7;arc.rotation.x=Math.PI/2;Cp.add(arc);
+  Cp.position.y=1.2;Cp.scale.setScalar(0);S.add(Cp);
+
+  /* غبار ذهبي */
+  var N=700,pa=new Float32Array(N*3);for(var j=0;j<N*3;j++)pa[j]=(Math.random()-.5)*26;
+  var pg=new THREE.BufferGeometry();pg.setAttribute("position",new THREE.BufferAttribute(pa,3));
+  var dust=new THREE.Points(pg,new THREE.PointsMaterial({color:0x7dd3fc,size:.05,transparent:true,opacity:.6}));S.add(dust);
+
+  /* مراحل التمرير: برج x,y,rotY,scale | فرجار | حلقة | كاميرا z */
+  var K=[
+    {x:-2.2,y:0,r:0,s:1,c:0,g:0,z:13},
+    {x:-2.6,y:-.4,r:1.6,s:1.15,c:0,g:0,z:11},
+    {x:-3.4,y:.6,r:3.2,s:.55,c:0,g:0,z:12},
+    {x:-6,y:-1,r:4.4,s:.5,c:1,g:0,z:11},
+    {x:-2.4,y:0,r:5.6,s:.9,c:.0,g:.4,z:12},
+    {x:-2.2,y:0,r:6.6,s:1,c:0,g:1,z:11}
+  ];
+  var lastY=0,spin=0;var cur={x:-2.2,y:0,r:0,s:1,c:0,g:0,z:13},tgt=cur,mx=0,my=0;
+  function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+  addEventListener("resize",size);size();
+  addEventListener("pointermove",function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5},{passive:true});
+  function ss(t){return t*t*(3-2*t)}
+  function prog(){var m=document.documentElement.scrollHeight-innerHeight;return m>0?Math.min(Math.max(scrollY/m,0),1):0}
+  function frame(t){
+    var mob=innerWidth<820,p=prog()*(K.length-1),i=Math.min(Math.floor(p),K.length-2),f=ss(p-i),a=K[i],b=K[i+1];
+    var o={};for(var n in a)o[n]=a[n]+(b[n]-a[n])*f;
+    var lerp=rm?1:.07;for(var n2 in o)cur[n2]+=(o[n2]-cur[n2])*lerp;
+    var mx2=mob?0:cur.x,my2=mob?cur.y+2.4:cur.y;
+    T.position.set(mx2,my2,0);var sv=Math.abs(scrollY-lastY);lastY=scrollY;spin+=sv*.0016;var it=rm?1:Math.min(t/2600,1),ie=1-Math.pow(1-it,3);T.rotation.y=cur.r+t*.00018+spin;T.scale.setScalar(cur.s*(mob?.8:1));T.scale.y*=Math.max(ie,.001);
+    ring.position.copy(T.position);ring.position.z=-1;ring.scale.setScalar(cur.s*(1+.03*Math.sin(t*.002)));ring.material.opacity=cur.g*.9;ring.rotation.z=t*.0003;
+    ring2.position.copy(ring.position);ring2.scale.setScalar(cur.s);ring2.material.opacity=cur.g*.5;ring2.rotation.z=-t*.0004;
+    Cp.position.set(mob?0:cur.x+.4,mob?my2:1.2,0);Cp.scale.setScalar(Math.max(cur.c,.0001)*(mob?.7:1));Cp.rotation.y=t*.0006;arc.material.opacity=cur.c*.8;
+    var sw=Math.sin(t*.0012)*.12;Cp.children[0].rotation.z=.4+sw;Cp.children[1].rotation.z=-.4-sw;
+    dust.rotation.y=t*.00004;dust.position.y=(t*.0004)%2-1;for(var q=0;q<fl.length;q++){fl[q].material.opacity=.15+.65*Math.max(0,Math.sin(t*.0024-fl[q].userData.k*.3))}
+    C.position.set(mx*1.2,2.2-my*.8,cur.z);C.lookAt(mob?0:-1.2,mob?1:.6,0);
+    R.render(S,C);
+    if(!rm)requestAnimationFrame(frame);
+  }
+  if(rm){frame(0);addEventListener("scroll",function(){frame(0)},{passive:true})}else requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
